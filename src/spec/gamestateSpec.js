@@ -1,4 +1,4 @@
-import GameState from '../gamestate';
+import { GameState } from '../gamestate';
 
 describe('gamestate', function() {
     var state, callCount;

@@ -1,4 +1,4 @@
-import GameStateManager from '../gamestatemanager';
+import { GameStateManager } from '../gamestatemanager';
 
 describe('gamestatemanager', function() {
     var manager, firstState, firstId, runData, gameState2, id2;

@@ -1,6 +1,6 @@
 import { EventEmitter } from "events";
 
-class GameState extends EventEmitter {
+export class GameState extends EventEmitter {
     get finishedEvent() {
         return 'finished';
     }
@@ -21,5 +21,3 @@ class GameState extends EventEmitter {
         this.emit(this.finishedEvent);
     }
 }
-
-export default GameState;

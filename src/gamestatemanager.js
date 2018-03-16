@@ -1,7 +1,6 @@
 import { EventEmitter } from "events";
-import './gamestate';
 
-class GameStateManager extends EventEmitter {
+export class GameStateManager extends EventEmitter {
     constructor(id, currentGameState, runtimeData) {
         super();
         this._gamestatemap = new Map();
@@ -79,5 +78,3 @@ class GameStateManager extends EventEmitter {
         this.emit(this.finishedEvent);
     }
 }
-
-export default GameStateManager;
