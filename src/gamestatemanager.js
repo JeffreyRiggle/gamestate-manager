@@ -33,8 +33,8 @@ export class GameStateManager extends EventEmitter {
 
     set currentGameState(gameState) {
         if (this._currentGameState) {
-            this._currentGameState.off('completed', this.onCompleted);
-            this._currentGameState.off('finish', this.onFinished);
+            this._currentGameState.removeListener('completed', this.onCompleted);
+            this._currentGameState.removeListener('finish', this.onFinished);
         }
         
         this._currentGameState = gameState;

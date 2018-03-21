@@ -14,7 +14,7 @@ describe('gamestatemanager', function() {
                     this.finished = callback;
                 }
             },
-            off: function() {},
+            removeListener: function() {},
             run: function(rundata) {
                 this.data = rundata;
                 this.runCount++;
