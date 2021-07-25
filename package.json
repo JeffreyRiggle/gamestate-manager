@@ -4,6 +4,7 @@
   "repository": "https://github.com/JeffreyRiggle/gamestate-manager",
   "author": "JeffreyRiggle <JeffreyRiggle@gmail.com>",
   "license": "MIT",
+  "main": "dist/main.js",
   "scripts": {
     "test": "karma start karma.config.js",
     "build": "webpack"

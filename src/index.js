@@ -1,7 +1,7 @@
 import { GameState } from './gamestate';
 import { GameStateManager } from './gamestatemanager';
 
-module.exports = {
+export {
     GameState,
     GameStateManager
 };
