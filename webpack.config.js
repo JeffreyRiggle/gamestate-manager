@@ -8,17 +8,15 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: './[name].js',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
+        library: 'gameStateManagerLib'
     },
     module: {
         rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['@babel/preset-env']
-                }
+                loader: 'babel-loader'
             }
         ]
     },
